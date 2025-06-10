@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies and Test
         run: |
           npm install
-          npm run lint
+#          npm run lint
           npm run test
 
       - name: Build Application

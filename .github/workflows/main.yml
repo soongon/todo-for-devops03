@@ -34,10 +34,9 @@ jobs:
             az webapp create \
               --resource-group rg-appservice-infrastructure-dev-04 \
               --plan asp-dev \
-              --name todo-webapp-dev
-              --os-type Linux \
-              --multicontainer-config-type None
-
+              --name todo-webapp-dev \
+              --deployment-container-image-name soongon/todo-app
+          
             # 바로 컨테이너 설정
             az webapp config container set \
               --name todo-webapp-dev \
